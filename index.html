@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edu Validate | Quiz • Learn • Grow</title>
+  <meta name="description" content="Edu Validate - online quizzes in Python, HTML, CSS and JavaScript.">
+  <meta name="author" content="S. Abhishek Selva">
+  <meta name="theme-color" content="#050505">
+  <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <a href="#home" class="brand">
+      <span>Edu <b>Validate</b></span>
+    </a>
+    <nav><a href="#categories">Quizzes</a></nav>
+  </header>
+
+  <!-- HOME -->
+  <main id="homeView">
+
+    <section class="hero" id="home">
+      <img src="logo.png" class="logo hero-logo" alt="Edu Validate">
+      <div class="badge">✦ ONLINE QUIZ COMPETITION</div>
+      <h1>Validate Your <span>Knowledge.</span></h1>
+      <p class="lead">Choose a subject, answer 20 questions and see how well you score.</p>
+      <div class="creator">Designed &amp; Developed by <span>S. Abhishek Selva</span></div>
+    </section>
+
+    <section class="section" id="categories">
+      <h2 class="title">Choose a <span>Quiz</span></h2>
+      <div class="cat-grid">
+
+        <button class="cat-card" data-cat="python">
+          <span class="cat-icon">Py</span>
+          <h3>Python</h3>
+          <span class="cat-meta">20 questions • <em id="best-python">Best: –</em></span>
+          <span class="cat-go">Start →</span>
+        </button>
+
+        <button class="cat-card" data-cat="html">
+          <span class="cat-icon">&lt;/&gt;</span>
+          <h3>HTML</h3>
+          <span class="cat-meta">20 questions • <em id="best-html">Best: –</em></span>
+          <span class="cat-go">Start →</span>
+        </button>
+
+        <button class="cat-card" data-cat="css">
+          <span class="cat-icon">{ }</span>
+          <h3>CSS</h3>
+          <span class="cat-meta">20 questions • <em id="best-css">Best: –</em></span>
+          <span class="cat-go">Start →</span>
+        </button>
+
+        <button class="cat-card" data-cat="javascript">
+          <span class="cat-icon">JS</span>
+          <h3>JavaScript</h3>
+          <span class="cat-meta">20 questions • <em id="best-javascript">Best: –</em></span>
+          <span class="cat-go">Start →</span>
+        </button>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- QUIZ -->
+  <section id="quizView" class="view">
+    <div class="panel">
+      <div class="q-head">
+        <span class="chip" id="catName"></span>
+        <button class="link-btn" id="quitBtn">✕ Quit</button>
+      </div>
+      <div class="q-top">
+        <span id="qCount"></span>
+        <span>SCORE: <strong id="scoreNow">0</strong></span>
+      </div>
+      <div class="progress"><div id="bar"></div></div>
+      <h2 id="question"></h2>
+      <div id="options"></div>
+      <button class="btn btn-primary full" id="nextBtn" disabled>Next Question →</button>
+    </div>
+  </section>
+
+  <!-- RESULT -->
+  <section id="resultView" class="view">
+    <div class="panel result">
+      <p class="eyebrow" id="resCat"></p>
+      <h2 id="resTitle"></h2>
+      <div class="big-score" id="resScore"></div>
+      <p class="percent" id="resPercent"></p>
+      <p class="msg" id="resMsg"></p>
+      <p class="best" id="resBest"></p>
+      <div class="actions">
+        <button class="btn btn-primary" id="retryBtn">Try Again</button>
+        <button class="btn btn-ghost" id="otherBtn">Other Quizzes</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="foot-brand">EDU VALIDATE</div>
+    <div class="foot-tag">Quiz • Learn • Grow</div>
+    <div class="foot-by">Designed &amp; Developed by <strong>S. Abhishek Selva</strong></div>
+    <div class="copy">© 2026 Edu Validate. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
